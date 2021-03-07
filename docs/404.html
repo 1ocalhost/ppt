@@ -24,9 +24,6 @@
   async function fetchTree() {
     var url = 'https://api.github.com/repos/' +
       `${username}/${username}.github.io/contents${path}`;
-
-    url = 'https://api.github.com/repos/' +
-      `${username}/ppt/contents${path}`;
     return await fetch(url);
   }
 
